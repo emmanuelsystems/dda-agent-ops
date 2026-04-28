@@ -2,6 +2,15 @@
 
 All notable changes to this repo will be documented here.
 
+## [v0.2.0] - 2026-04-28
+
+### Added
+
+- Filled DDA instructions, app flow, and PRD baseline for manual pilot readiness.
+- Added source-of-truth promotion workflow and precedence order.
+- Expanded core behavior evals with explicit pass/fail test cases.
+- Converted manual pilot plan from placeholder bullets into executable runbook.
+
 ## [v0.1.0] - 2026-04-28
 
 ### Added

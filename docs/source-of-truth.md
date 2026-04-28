@@ -2,7 +2,7 @@
 title: Source of Truth Model
 asset_type: reference
 status: draft
-version: v0.1
+version: v0.2
 owner: Emmanuel Olana
 related_project: DDA Agent Ops Pilot
 related_agent: diarized-daily-assistant
@@ -73,6 +73,36 @@ If Notion and GitHub conflict:
 If memory conflicts with committed repo files, the committed repo file wins.
 
 If chat history conflicts with a reviewed artifact, the reviewed artifact wins.
+
+
+## Promotion Workflow (Draft -> Reviewed -> Durable)
+
+### States
+
+1. Draft: working artifact not yet approved.
+2. Reviewed: artifact reviewed by human with required checks complete.
+3. Durable: approved artifact stored in durable surface (committed GitHub source or approved Notion record).
+
+### Promotion Rules
+
+- Draft -> Reviewed: human reviewer confirms boundary compliance, source citations, and scope alignment.
+- Reviewed -> Durable (GitHub): artifact is committed in the repo.
+- Reviewed -> Durable (Notion): artifact is explicitly marked approved in Notion.
+- Memory durability requires explicit human approval and approved memory logging.
+
+### Precedence Order
+
+1. Committed GitHub source files.
+2. Approved Notion artifact records.
+3. Approved memory entries.
+4. Chat history (temporary context only).
+
+### Conflict Handling Procedure
+
+1. Identify conflicting artifacts and quote their paths.
+2. Apply precedence order.
+3. Record the resolution in a reviewed artifact.
+4. Escalate unresolved ambiguity as an open question.
 
 ## Notion Owns
 
