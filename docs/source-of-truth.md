@@ -92,6 +92,14 @@ If chat history conflicts with a reviewed artifact, the reviewed artifact wins.
 
 ### Precedence Order
 
+Use the conflict table above first. The precedence order below applies only when two reviewed artifacts conflict within the same ownership class.
+
+Examples:
+
+- Planning or active task status still resolves to Notion unless mirrored to GitHub Issues.
+- Prompt, agent, skill, template, and eval source still resolves to committed GitHub files.
+- Memory candidates still resolve to approved memory logs, not raw chat.
+
 1. Committed GitHub source files.
 2. Approved Notion artifact records.
 3. Approved memory entries.
@@ -100,9 +108,10 @@ If chat history conflicts with a reviewed artifact, the reviewed artifact wins.
 ### Conflict Handling Procedure
 
 1. Identify conflicting artifacts and quote their paths.
-2. Apply precedence order.
-3. Record the resolution in a reviewed artifact.
-4. Escalate unresolved ambiguity as an open question.
+2. Apply the conflict table first.
+3. Apply the scoped precedence order only if the conflict remains within one ownership class.
+4. Record the resolution in a reviewed artifact.
+5. Escalate unresolved ambiguity as an open question.
 
 ## Notion Owns
 

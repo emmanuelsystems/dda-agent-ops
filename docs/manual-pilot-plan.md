@@ -42,8 +42,8 @@ Store in `runs/YYYY-MM-DD/`:
 - `midday-recenter.md`
 - `evening-report.md`
 - `tomorrow-seed.md`
-- `dda-to-codex-handoff-01.md` (optional by trigger)
-- `codex-to-dda-completion-01.md` (optional by trigger)
+- `codex-handoffs/dda-to-codex-handoff-01.md` (optional by trigger)
+- `codex-completions/codex-to-dda-completion-01.md` (optional by trigger)
 - `run-summary.md`
 
 ## Template Mapping
