@@ -2,6 +2,19 @@
 
 All notable changes to this repo will be documented here.
 
+## [v0.3.0] - 2026-04-29
+
+### Added
+
+- Added Apr 29 pre-meeting staging artifacts under `runs/2026-04-29/`.
+- Added manual DDA run packets for morning context, top-of-mind intake, daily game plan, tomorrow seed, and run summary.
+- Added Codex handoff and completion packets for the Apr 29 staging work.
+- Expanded DDA agent config, memory, and automation source docs with proof boundaries and current runtime gaps.
+
+### Clarified
+
+- Current repo artifacts prove scaffold and manual staging progress, not live DDA runtime configuration, connected apps/actions, persistent memory, or automation.
+
 ## [v0.2.0] - 2026-04-28
 
 ### Added
