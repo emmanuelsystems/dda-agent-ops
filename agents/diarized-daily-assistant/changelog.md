@@ -2,16 +2,30 @@
 title: DDA Agent Changelog
 asset_type: changelog
 status: draft
-version: v0.3
+version: v0.3.1
 owner: Emmanuel Olana
 related_project: DDA Agent Ops Pilot
 related_agent: diarized-daily-assistant
 github_path: agents/diarized-daily-assistant/changelog.md
 created: 2026-04-28
-updated: 2026-04-29
+updated: 2026-05-04
 ---
 
 # DDA Agent Changelog
+
+## [v0.3.1] - 2026-05-04
+
+This changelog entry records the PRD v0.3 draft expansion and proof-boundary clarification.
+
+### Added
+
+- Expanded the DDA PRD to v0.3 with workspace-agent architecture, responsibility boundaries, app connection strategy, reporting boundaries, agent improvement loop, runtime proof gates, and actor / connector identity requirements.
+- Added PRD-level feature IDs, user stories, success metrics, and proof-gated acceptance criteria for the DDA-to-Workspace-Agent alignment lane.
+
+### Clarified
+
+- Visible Agent Studio setup, connected apps, memory, automation, and repo-write behavior remain unproven until reviewed runtime evidence satisfies the PRD proof gates.
+- `dda-agent-ops` remains the pilot repo unless the operator explicitly approves a shared `systems-shaper-agents` repo direction.
 
 ## [v0.3.0] - 2026-04-29
 
