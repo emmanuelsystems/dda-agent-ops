@@ -427,9 +427,20 @@ The manual pilot is acceptable when:
 - Daily packet set is complete for at least 4 of 5 days.
 - No boundary violations occur.
 - At least one full DDA-to-Codex-to-DDA loop is completed and documented.
+- Any automation candidate remains candidate-only unless manual proof gates are met and the operator explicitly approves promotion.
+
+These criteria prove the manual operating loop. They do not prove workspace-agent runtime readiness.
+
+## Workspace-Agent Runtime Readiness Criteria
+
+DDA can be considered ready for workspace-agent runtime review when:
+
 - At least one supervised runtime proof packet is reviewed.
 - Connector identity status is captured for every app used in a personal-context pull.
-- Any automation candidate remains candidate-only unless all proof gates are met.
+- App/action permissions are documented for read, draft, write, and approval boundaries.
+- A supervised runtime test produces the expected run artifact output without unauthorized Slack, Notion, email, memory, repo, or automation writes.
+- Memory candidates remain proposed only unless explicitly approved.
+- Automation candidates remain candidate-only unless all automation proof gates are met and the operator explicitly approves activation.
 
 ## Open Questions
 
