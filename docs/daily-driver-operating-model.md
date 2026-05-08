@@ -128,6 +128,8 @@ The orientation brief should answer:
 - What approvals are required?
 - What evidence supports the answer?
 
+Use `templates/orientation-brief.md` as the reusable draft shape for new orientation briefs.
+
 ## Supporting Artifacts
 
 Daily Driver runs may also use:

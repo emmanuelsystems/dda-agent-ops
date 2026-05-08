@@ -2,6 +2,18 @@
 
 All notable changes to this repo will be documented here.
 
+## [Unreleased] - 2026-05-07
+
+### Added
+
+- Added draft Daily Driver v0.1 artifacts for goal setting, state tracking, pre-staging, and May 7 evidence capture.
+- Added a reusable `templates/orientation-brief.md` draft template.
+
+### Clarified
+
+- Daily Driver readiness remains Yellow/manual-supervised.
+- May 7 artifacts are draft/review-only and do not authorize commits, pushes, external posts, Notion updates, memory saves, automation, or Green readiness claims.
+
 ## [v0.3.0] - 2026-04-29
 
 ### Added

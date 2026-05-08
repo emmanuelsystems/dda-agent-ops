@@ -49,9 +49,9 @@ This packet captures the first supervised orientation-first test after the DDA A
 
 ## Important Evidence Boundary
 
-The live Agent Studio runtime and the local Codex repo checkout do not appear to have identical context.
+The live Agent Studio runtime and the local Codex repo checkout did not appear to have identical attached-file context during the preview.
 
-The runtime-generated orientation/state artifacts said the workspace did not contain the referenced baseline repo artifacts. In this Codex checkout, prior run artifacts for 2026-04-29, 2026-05-04, and 2026-05-05 are present.
+The runtime-generated orientation/state artifacts behaved as if some prior repo artifacts were not visible. In this Codex checkout, prior run artifacts for 2026-04-29, 2026-05-04, and 2026-05-05 are present.
 
 This is not a failure of the Daily Driver test. It is a useful proof boundary: future runtime tests should explicitly capture which files are attached or visible to the agent during the run.
 

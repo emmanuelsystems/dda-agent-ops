@@ -24,7 +24,7 @@
 - Notion: working-context docs for the reframe and scoping packet.
 - Linear: `SSI-113` active evidence lane; `SSI-112` remains related review history.
 - Slack: latest coordination and daily gameplan in `#diarized-daily`; supporting updates in `#agents`.
-- GitHub/repo-backed artifacts: prior run artifacts are referenced as proof, but this workspace does not contain that repo baseline locally.
+- GitHub/repo-backed artifacts: this checkout contains prior run artifacts for 2026-04-29, 2026-05-04, and 2026-05-05; the Agent Studio preview had a narrower attached-file view.
 - ChatGPT: current drafting and orientation surface.
 
 ## Where Each Loop Left Off
@@ -60,4 +60,4 @@
 - Linear: `SSI-113 Agentic Team Buildout - Align DDA Pilot 001 Evidence Lane` plus comments from 2026-05-05 and 2026-05-06.
 - Linear: `SSI-112 Apr 29 pre-meeting staging: artifact-backed update and agenda`.
 - Slack: `#diarized-daily` messages from 2026-05-06 and 2026-05-07.
-- Local reference docs: `/workspace/agent_files/docs/supervised-runtime-output.md` and `/workspace/agent_files/docs/agent-studio-profile.md`.
+- Local reference docs: `runs/2026-05-07/supervised-runtime-output.md` and `runs/2026-05-07/agent-studio-profile.md`.

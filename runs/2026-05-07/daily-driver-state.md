@@ -21,7 +21,7 @@ Source note: the active goal comes from the operator-provided Codex goal, curren
 | Surface | Role | Current Status | Last Checked | Evidence Ref |
 |---|---|---|---|---|
 | codex | execution | Current implementation and verification surface. | 2026-05-07 | Current Codex goal and working tree status. |
-| github_repo | source/trace | Draft artifacts exist locally and are untracked for review. | 2026-05-07 | `git status --short --branch` |
+| github_repo | source/trace | Draft artifacts exist in the repo for review; this session's cleanup remains uncommitted until approval. | 2026-05-07 | `git status --short --branch`; `git log --oneline --max-count=1` |
 | chatgpt | temporary_context | Current drafting surface for orientation and packet review. | 2026-05-07 | Current thread context. |
 | notion_ai | planning | Cited as May 6 working-context source, not refreshed in this Codex pass. | 2026-05-07 | `runs/2026-05-07/orientation-brief.md` |
 | linear | task_status | Cited as SSI-113 evidence lane, not refreshed in this Codex pass. | 2026-05-07 | `runs/2026-05-07/orientation-brief.md` |
@@ -68,7 +68,7 @@ Source note: the active goal comes from the operator-provided Codex goal, curren
 - **Owner:** Emmanuel Olana
 - **Status:** draft/review-only repo packet
 - **Priority:** current Daily Driver v0.1 artifact completion
-- **Acceptance target:** goal-setting, state tracking, pre-staging, and May 7 evidence artifacts exist as local drafts; readiness remains Yellow; no commit or push occurs
+- **Acceptance target:** goal-setting, state tracking, pre-staging, and May 7 evidence artifacts exist as draft/review-only repo artifacts; readiness remains Yellow; this cleanup pass does not commit or push
 - **Next task:** review packet, approve revisions, then decide whether to commit or route to Linear/Slack/Notion
 
 ## Pre-Staged Artifacts
@@ -90,8 +90,8 @@ Current Codex pass should finish repo-local draft artifacts and verification onl
 | Source Surface | Source Ref | Timestamp | Claim Supported | Confidence | Gap Or Risk |
 |---|---|---|---|---|---|
 | operator | current Codex goal | 2026-05-07 | The packet must cover goal-setting, state tracking, pre-staging, and May 7 evidence capture. | confirmed | None for local scope. |
-| github_repo | `git status --short --branch` | 2026-05-07 | The Daily Driver files are draft local changes and have not been committed. | confirmed | Does not prove remote PR state. |
-| github_repo | `runs/2026-05-07/trace-log.md` | 2026-05-07 | Packet claims are mapped to evidence and gaps. | confirmed | Newly drafted; pending review. |
+| github_repo | `git status --short --branch`; `git log --oneline --max-count=1` | 2026-05-07 | The Daily Driver files are repo-backed draft artifacts, and current cleanup changes still require review before commit or push. | confirmed | Does not prove remote PR state or human approval. |
+| github_repo | `runs/2026-05-07/trace-log.md` | 2026-05-07 | Packet claims are mapped to evidence and gaps. | confirmed | Draft artifact; pending human review. |
 | github_repo | `runs/2026-05-07/supervised-runtime-output.md` | 2026-05-07 | One supervised preview supports Yellow/manual-supervised progress but not Green readiness. | likely | Full runtime artifact body was not visible from preview transcript alone. |
 
 ## Blocked Decisions

@@ -287,4 +287,4 @@ The workflow fails when:
 - `docs/daily-driver-operating-model.md`
 - `schemas/daily-driver-state-object.md`
 - `templates/goal-packet.md`
-- `templates/orientation-brief.md` (planned)
+- `templates/orientation-brief.md`

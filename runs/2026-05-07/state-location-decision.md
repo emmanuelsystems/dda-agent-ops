@@ -14,9 +14,9 @@
 
 ## Verified Inputs Used
 
-- `/workspace/runs/2026-05-07/orientation-brief.md`
-- `/workspace/runs/2026-05-07/workflow-pre-stage.md`
-- `/workspace/runs/2026-05-07/daily-driver-state.md`
+- `runs/2026-05-07/orientation-brief.md`
+- `runs/2026-05-07/workflow-pre-stage.md`
+- `runs/2026-05-07/daily-driver-state.md`
 - Notion working-context docs viewed on 2026-05-06:
   - `Daily Driver Agent - Operating Model + Repo Architecture Scoping Packet v0.1`
   - `Daily Driver Agent - Positioning Reframe Note`

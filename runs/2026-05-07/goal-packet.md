@@ -19,7 +19,7 @@ Source note: the active goal is based on the operator-provided Codex goal, the M
 | Source Surface | Source Ref | Claim Supported | Confidence | Gap |
 |---|---|---|---|---|
 | operator | current Codex goal | Daily Driver v0.1 repo artifacts are the current implementation target. | confirmed | None for this work loop. |
-| repo | `AGENTS.md` instructions supplied in current thread | Changes must remain draft/review-only and must not be committed or pushed without approval. | confirmed | None for this work loop. |
+| repo | `AGENTS.md` instructions supplied in current thread | Changes must remain draft/review-only, and this Codex pass must not commit or push without approval. | confirmed | None for this work loop. |
 | repo | `docs/daily-driver-operating-model.md` | DDA owns orientation, alignment, pre-staging, and trace discipline while Codex owns repo execution. | confirmed | Draft artifact, not approved canon. |
 | repo | `workflows/goal-setting-workflow.md` | The goal-setting workflow should produce a goal packet and, when useful, a Codex CLI goal handoff. | confirmed | Draft artifact, not approved canon. |
 | repo | `runs/2026-05-07/run-summary.md` | The May 7 packet should preserve Yellow/manual-supervised readiness. | confirmed | Human review still pending. |
@@ -57,7 +57,7 @@ The third goal is active because the current Codex goal explicitly asks for repo
 
 | Surface | Role | Checked This Run | Current Gap |
 |---|---|---|---|
-| repo | source/trace | yes | Draft files remain review-only until approved for commit and push. |
+| repo | source/trace | yes | Draft files remain review-only; additional commits or pushes require explicit approval. |
 | codex | execution | yes | Current CLI goal is session guidance, not durable truth by itself. |
 | linear | task_status | no | May 7 files cite SSI-113 context, but no live Linear refresh was performed in this Codex pass. |
 | slack | discussion | no | May 7 files cite Slack context, but no live Slack refresh was performed in this Codex pass. |
@@ -108,7 +108,7 @@ Return a completion packet that lists files created or updated, decisions made, 
 ## Blocked Decisions
 
 - David/operator review is required before the Daily Driver reframe becomes approved operating canon.
-- Operator approval is required before any draft artifacts are committed or pushed.
+- Operator approval is required before any additional draft artifacts or cleanup changes are committed or pushed.
 - State location remains a recommendation until the Hybrid model is accepted or revised.
 
 ## Notes For Orientation Brief

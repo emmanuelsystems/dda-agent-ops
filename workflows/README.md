@@ -4,4 +4,8 @@ This folder stores repeatable DDA operating workflows.
 
 ## Current Status
 
-No standalone workflows are approved yet.
+Standalone workflows are draft/review-only unless explicitly approved.
+
+Current draft workflows:
+
+- `goal-setting-workflow.md` - Daily Driver v0.1 goal selection, state handoff, and Codex `/goal` translation workflow.
