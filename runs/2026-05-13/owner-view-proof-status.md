@@ -8,7 +8,7 @@ related_project: DDA Agent Ops Pilot
 related_agent: diarized-daily-assistant
 related_issue: SSI-113
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-15
 approval_status: not_approved
 runtime_claim: none
 canon_claim: none
@@ -32,6 +32,20 @@ It packages the current repo-visible evidence and distinguishes prior owner-view
 - Current agent classification: Emmanuel-owned team-test infrastructure
 - Friday packet goal: decide whether supervised loop 003 can run, loop 003 stays blocked, or a separate David-authenticated DDA instance is needed
 
+## May 15 Proof-Closure Focus
+
+David's latest feedback keeps the repo-backed packet at `4337cfc` as the baseline and narrows the next step to one proof-closure update.
+
+This status packet should now be refreshed only around the remaining blocker rows:
+
+- schedule modal/export proof
+- Slack writes disabled or safely gated
+- memory after-state / disable-gate proof if available, or a diff-test plan if disable is unavailable
+- exact Linear / Notion principals if visible
+- refreshed blocker table using `PASS / BLOCK / UNKNOWN`, with `UNKNOWN = BLOCK`
+
+No DDA strategy expansion, `/todo` work, goal-setter work, or skills-base design belongs in this proof-closure pass unless it directly closes one of these rows.
+
 ## Source Inputs
 
 | Source | Path or surface | Status | What it contributes |
@@ -53,10 +67,10 @@ It packages the current repo-visible evidence and distinguishes prior owner-view
 
 | Proof category | Current repo-visible evidence | Current status | Next proof required |
 |---|---|---|---|
-| Schedule state | May 5 profile said ChatGPT schedules none and Slack schedules none. May 8 owner-view context says an active `#diarized-daily` schedule was first observed, then operator removed it. May 14 overview screenshot does not show the schedule modal/list. | Still `UNKNOWN = BLOCK` from screenshots | Current screenshot or export showing no active schedule remains, including scope, timezone, and running identity. |
+| Schedule state | May 5 profile said ChatGPT schedules none and Slack schedules none. May 8 owner-view context says an active `#diarized-daily` schedule was first observed, then operator removed it. May 14 overview screenshot does not show the schedule modal/list. May 15 screenshot 10 shows one active ChatGPT schedule: `Mon, Tue, Wed, Thu, Fri at 9AM`. May 15 screenshot 11 supersedes that state and shows only `Add new schedule`, with no active schedule listed. | PASS from latest screenshot evidence | Preserve screenshot 10 as historical blocker evidence; use screenshot 11 as the current schedule proof unless newer evidence conflicts. |
 | Memory disable / gate / diff-testability | Repo memory policy is approval-gated. May 5 profile says Memory is enabled. May 8 context says no memory disable control was found. May 14 memory screenshot shows file-based memory folders for `ChatGPT`, `#diarized-daily`, `#agents`, and `#ai-model-updates`. | Before-state proof exists; after-state and disable/gate proof still incomplete | Memory after-state capture after loop 003, plus disable/gate control proof if available. |
 | Connector identities | May 14 screenshots show Gmail, Slack, Google Drive, and GitHub as agent-owned `emmanuel@systemsshaper.com`; Linear and Notion show agent-owned account selected but exact principal not visible. | Partial; current evidence supports Emmanuel-owned infrastructure, not David-authenticated infrastructure | Exact Linear and Notion principal proof if required. |
-| Write posture, especially Slack | May 14 Slack screenshot shows write action safety `Never ask` and enabled write actions for `Create canvas`, `Create draft message`, `Schedule message`, and `Send message`. | BLOCK; primary current blocker | Disable Slack write actions or change safety posture before any connector-enabled test. |
+| Write posture, especially Slack | May 14 Slack screenshot shows write action safety `Never ask` and enabled write actions for `Create canvas`, `Create draft message`, `Schedule message`, and `Send message`. May 15 follow-up Slack screenshot shows visible write action toggles off, including reaction, canvas, draft, conversation, schedule, send, delete, edit, and canvas update actions. | Conditional PASS for write-action disabled posture | Preserve the May 14 blocker as historical evidence; do not claim runtime Slack safety from screenshot evidence alone. |
 | GitHub write posture | May 14 GitHub screenshot shows write action safety `Always ask`; write action toggles appear off; read actions are on. | Conditional PASS from screenshot | Keep as screenshot-supported conditional pass unless GitHub permissions are reconnected/changed. |
 | Owner/admin boundary | May 8 context says only the operator can directly verify/change owner settings; David/admin direct settings access is not proven. | PASS with access limitation; decision still open | Decide whether operator-only verification is acceptable or whether David needs admin access / a separate David-authenticated DDA instance. |
 | Latest readiness-check packet path | Current repo path for David's Track 1 packet is now `runs/2026-05-13/david-side-dda-track-1-review.md`. This companion status packet is `runs/2026-05-13/owner-view-proof-status.md`. | Review-ready path exists | Link these files in the Friday update after review. |
@@ -79,30 +93,39 @@ It packages the current repo-visible evidence and distinguishes prior owner-view
 - May 8 owner-view context documents a browser-supervised Agent Studio inspection and says screenshots were useful for schedule status, connector account mode, write-action safety, write-action toggles, and memory UI behavior.
 - May 8 owner-view context records the first blocker state, then records operator-confirmed fixes for schedule removal and GitHub write disablement.
 
-Current limitation: the screenshot appendix is now packaged, but it does not include a schedule modal/export, memory after-state proof, exact Linear/Notion principal proof, or proof that David/admin can change settings.
+Current limitation: the screenshot appendix now includes schedule modal/export evidence and Slack write-disabled follow-up. The latest schedule screenshot shows no active schedule listed, and Slack write actions appear disabled from visible toggles. The packet still does not include memory after-state proof, exact Linear/Notion principal proof, or proof that David/admin can change settings.
 
 ## Evidence Drift To Preserve
 
 - May 5 and May 7 profile artifacts say no visible ChatGPT or Slack schedules.
 - May 8 owner-view validation later observed an active `#diarized-daily` schedule before it was removed.
 - For the schedule row, May 8 should outrank the earlier profile snapshots because it is newer and specifically targeted the loop 003 blocker.
-- The repo-side claim should remain: previously blocked, operator-confirmed removed, final screenshot/export not packaged here yet.
+- The repo-side claim should now be: previously blocked, then screenshot 10 showed an active weekday 9AM ChatGPT schedule, and screenshot 11 superseded that with a no-active-schedule modal. Treat schedule as PASS from latest screenshot evidence unless newer evidence conflicts.
 
 ## Repo-Side Packet Now Available
 
 - `runs/2026-05-13/friday-decision-packet.md` synthesizes the repo-side decision logic.
 - `runs/2026-05-13/owner-view-screenshot-appendix.md` packages the May 14 screenshots.
 - From repo evidence plus screenshots, the recommendation is still to keep loop 003 blocked.
-- The current primary blocker is Slack write posture: write actions are enabled while write safety is `Never ask`.
+- Schedule state improves to PASS from the latest May 15 no-active-schedule modal screenshot.
+- Slack write posture improves to conditional PASS from the May 15 screenshot, but it should not be overread as runtime safety proof.
 
 ## Still `UNKNOWN = BLOCK`
 
-- Repo-packaged screenshot proof that no active schedule remains.
-- Slack write actions disabled or safely gated before loop 003.
+- Slack runtime safety remains unproven even though visible write toggles appear disabled in the May 15 screenshot.
 - Exact Linear and Notion principal proof if required.
 - Memory after-state screenshot for the loop 003 test.
 - Memory disable/gate control proof, if available.
 - Direct evidence that David can verify/change settings, or a decision that Emmanuel-only owner settings require a separate David-authenticated DDA instance.
+
+## Incoming Evidence Handling
+
+| Evidence slot | Current packet status | Required update before status can change |
+|---|---|---|
+| Schedule modal/export screenshot | Attached; PASS from latest screenshot | May 15 screenshot 10 showed an active ChatGPT schedule: `Mon, Tue, Wed, Thu, Fri at 9AM`; May 15 screenshot 11 supersedes it and shows only `Add new schedule`, with no active schedule listed. |
+| Slack write-disabled screenshot | Attached; conditional PASS | May 15 screenshot is now listed in the appendix and shows visible Slack write action toggles off. |
+| Memory after-state / disable-gate proof | Partial | Add after-state screenshot or explicit diff-test plan before loop 003. If disable is unavailable, preserve that as a limitation and make before/after capture the test control. |
+| Linear / Notion principal proof | Partial | Add exact principal proof if visible. If exact principals remain hidden, leave as partial unless David accepts the limitation for supervised loop 003. |
 
 ## Recommended Friday Decision Packet Shape
 
@@ -120,12 +143,12 @@ Use this packet set:
 
 Decision options:
 
-1. Run supervised loop 003 only if Slack writes are disabled/gated and missing schedule/memory proof is captured and reviewed.
-2. Keep loop 003 blocked if Slack write posture, schedule proof, or memory after-state proof remains incomplete.
+1. Run supervised loop 003 only if Slack writes are disabled/gated, schedule state remains clear, and missing memory proof is captured and reviewed.
+2. Keep loop 003 blocked if schedule evidence conflicts, Slack write posture regresses, memory after-state proof remains incomplete, or owner/admin acceptance remains unresolved.
 3. Create a separate David-authenticated DDA instance if operator-only settings access or Emmanuel-owned connector identity is not acceptable for David's morning-driver infrastructure.
 
 ## Recommendation
 
-Current recommendation: keep loop 003 blocked until Slack write actions are disabled or safely gated, the schedule state is proven with the schedule modal/export, and the remaining memory after-state proof is captured for the loop 003 test.
+Current recommendation: keep loop 003 blocked until memory after-state / diff-test handling and owner/admin acceptance are reviewed. Schedule now has PASS evidence from the latest no-active-schedule modal screenshot, and Slack write actions now have conditional PASS evidence from visible disabled toggles.
 
 The repo now has the requested David-side review packet path and a proof-status companion packet, but the evidence is not enough to upgrade DDA beyond `Yellow / not runtime-ready`.

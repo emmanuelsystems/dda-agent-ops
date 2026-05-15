@@ -8,7 +8,7 @@ related_project: DDA Agent Ops Pilot
 related_agent: diarized-daily-assistant
 related_issue: SSI-113
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-15
 approval_status: not_approved
 runtime_claim: none
 canon_claim: none
@@ -36,9 +36,23 @@ Operator-owned screenshots are intentionally treated as a separate appendix lane
 
 Keep loop 003 blocked from repo evidence and the May 14 screenshot appendix.
 
-Move to `candidate for supervised loop 003` only after Slack write actions are disabled or safely gated, schedule state is proven, memory after-state is captured, and the owner/admin boundary is accepted.
+Move to `candidate for supervised loop 003` only after Slack write actions are disabled or safely gated, schedule state is proven, memory after-state is captured or explicitly scoped as a loop 003 capture requirement, and the owner/admin boundary is accepted.
 
 Keep the separate David-authenticated DDA instance option open because the current agent is still classified as Emmanuel-owned team-test infrastructure.
+
+## May 15 Proof-Closure Intake
+
+David's latest direction narrows the next repo step to proof closure, not more DDA strategy.
+
+The next update to this packet should only add or link evidence for:
+
+- schedule modal/export proof
+- Slack writes disabled or safely gated
+- memory after-state / disable-gate proof if available, or a diff-test plan if disable is unavailable
+- exact Linear / Notion principals if visible
+- refreshed `PASS / BLOCK / UNKNOWN` blocker table, preserving `UNKNOWN = BLOCK`
+
+Do not use this proof-closure pass to expand `/todo`, goal-setter specs, skills-base design, or broader workflow theory unless the change directly closes one of the proof gaps above.
 
 ## Current Truth
 
@@ -69,13 +83,22 @@ Keep the separate David-authenticated DDA instance option open because the curre
 
 | Decision item | Repo-side evidence | Current repo-side read | Operator screenshot appendix |
 |---|---|---|---|
-| Schedule state | May 5 and May 7 profiles say no ChatGPT or Slack schedules. May 8 context says an active `#diarized-daily` schedule was observed first and then removed by the operator. May 14 overview screenshot shows the `Schedule` control but not the schedule modal/list. | Still `UNKNOWN = BLOCK` from screenshots. | Needs current screenshot/export showing no active schedule, schedule scope, timezone, and running identity. |
+| Schedule state | May 5 and May 7 profiles say no ChatGPT or Slack schedules. May 8 context says an active `#diarized-daily` schedule was observed first and then removed by the operator. May 14 overview screenshot shows the `Schedule` control but not the schedule modal/list. May 15 screenshot 10 shows one active ChatGPT schedule: `Mon, Tue, Wed, Thu, Fri at 9AM`. May 15 screenshot 11 supersedes that state and shows only `Add new schedule`, with no active schedule listed. | PASS from latest screenshot evidence. | Preserve screenshot 10 as historical blocker evidence; use screenshot 11 as the current schedule proof unless newer evidence conflicts. |
 | Memory posture | Repo policy is approval-gated. May 5 and May 7 profiles say Memory is enabled. May 8 context says no memory disable control was found and before/after memory capture is the practical control. May 14 memory screenshot shows file-based memory folders. | Before-state proof exists; BLOCK for after-state and disable/gate proof. | Needs after-state memory capture after loop 003 and, if available, a control/gate screenshot. |
 | Connector identities | May 14 screenshots show Gmail, Slack, Google Drive, and GitHub as agent-owned `emmanuel@systemsshaper.com`; Linear and Notion show agent-owned account selected but exact principal not visible. | Partial; enough to confirm Emmanuel-owned infrastructure for several surfaces, not enough to claim David-authenticated infrastructure. | Needs exact Linear and Notion principal proof if required. |
-| Slack/write posture | May 14 Slack screenshot shows write action safety `Never ask` and enabled write actions for `Create canvas`, `Create draft message`, `Schedule message`, and `Send message`. | BLOCK. Slack is the primary current blocker. | Disable Slack write actions or change safety posture before any connector-enabled test. |
+| Slack/write posture | May 14 Slack screenshot shows write action safety `Never ask` and enabled write actions for `Create canvas`, `Create draft message`, `Schedule message`, and `Send message`. May 15 follow-up Slack screenshot shows visible write action toggles off, including reaction, canvas, draft, conversation, schedule, send, delete, edit, and canvas update actions. | Conditional PASS for write-action disabled posture. | Preserve May 14 as historical blocker; do not claim runtime Slack safety from screenshot evidence alone. |
 | GitHub write posture | May 14 GitHub screenshot shows write action safety `Always ask`; write action toggles appear off; read actions are on. | Conditional PASS from screenshot. | Keep as screenshot-supported conditional pass unless GitHub permissions are reconnected/changed. |
 | Owner/admin boundary | May 8 context says only the operator can directly verify/change owner settings; David/admin direct setting access was not proven. | PASS with access limitation; decision remains open. | Needs either proof of David/admin access or explicit decision that a David-authenticated DDA instance is required. |
 | Runtime readiness | David Track 1 and May 5 current-truth test both preserve Yellow / not runtime-ready. | BLOCK for Green readiness. | Screenshot appendix does not by itself prove full runtime readiness; loop 003 still needs supervised run evidence. |
+
+## Pending Final Evidence Slots
+
+| Incoming evidence | Required durable handling | Packet impact before attachment | Packet impact after attachment and review |
+|---|---|---|---|
+| Schedule modal/export screenshot | Added screenshot 10 as `runs/2026-05-13/owner-view-screenshots/10-schedule-modal-active-weekdays-2026-05-15-130921.png` and screenshot 11 as `runs/2026-05-13/owner-view-screenshots/11-schedule-modal-no-active-schedule-2026-05-15-132812.png`. | Schedule was BLOCK in screenshot 10, then PASS from screenshot 11 because no active schedule is visible. | Keep PASS unless newer evidence conflicts. |
+| Slack write-disabled screenshot | Added as `runs/2026-05-13/owner-view-screenshots/09-slack-write-actions-disabled-2026-05-15-130840.png`. | Slack write-action disabled posture now has follow-up proof. | Conditional PASS for visible Slack write-action toggles off; do not claim runtime safety from screenshot evidence alone. |
+| Memory after-state or disable/gate proof | Add screenshot or explicit diff-test plan to the appendix/status packet. | Memory remains partial: before-state exists; after-state and disable/gate proof incomplete. | Can move to conditional PASS only if before/after capture or a reviewed diff-test plan is durable. |
+| Linear / Notion principal proof | Add screenshot or reviewed note that shows exact principals, if visible. | Linear and Notion remain partial. | Can move to PASS or accepted limitation only if exact principals are visible or David accepts the limitation. |
 
 ## What Is Already Strong Enough In Repo
 
@@ -130,7 +153,7 @@ Choose this if any of the following remain true:
 - connector identities remain unclear
 - owner/admin boundary is not accepted
 
-This is the current recommendation from repo evidence alone.
+This remains the current recommendation because memory after-state / diff-test handling is still incomplete and owner/admin acceptance is still a decision point. Schedule now has PASS evidence from the latest screenshot, and Slack write-action disabled posture has conditional PASS evidence.
 
 ### Option 3: Create David-authenticated DDA instance
 
@@ -150,6 +173,8 @@ The screenshot appendix is now present:
 `runs/2026-05-13/owner-view-screenshot-appendix.md`
 
 Next repo work should update the appendix only if the operator captures changed Slack settings, schedule modal proof, memory after-state proof, or exact Linear/Notion principal proof.
+
+The expected screenshots are now attached and reflected in the appendix. Do not change the recommendation from blocked to candidate until memory after-state / diff-test handling and owner/admin acceptance are reviewed.
 
 ## Recommended Friday Update Shape
 
