@@ -13,6 +13,14 @@ Codex owns build/research execution.
 Automations own recurrence.  
 Durable artifacts own truth.
 
+## David Codex Workloop
+
+For DDA and Codex work, design the workflow as:
+
+`intent -> context -> mode -> slot -> cadence -> artifact -> verifier -> memory -> gate -> learning update`
+
+Use this sequence as an operating checklist, not as permission to bypass approval boundaries. In particular, `memory`, external writes, automations, pull requests, and final-status claims still require the human approval gates below.
+
 ## How Codex Should Use This Repo
 
 Codex may:
@@ -35,6 +43,23 @@ Codex must not:
 - Overwrite approved source files without preserving changelog context.
 - Mark speculative assumptions as facts.
 - Create or push commits without explicit human approval.
+
+## Coding Behavior Contract
+
+Use this Karpathy-derived 12-rule contract for Codex work in this repo:
+
+1. Think before coding: state assumptions, surface tradeoffs, ask when unclear, and push back when a simpler or safer path exists.
+2. Simplicity first: write the minimum code or markdown needed to solve the request; avoid speculative features and single-use abstractions.
+3. Surgical changes: touch only the files and lines required; do not refactor, reformat, or clean unrelated code.
+4. Goal-driven execution: define what success means, then verify against that success condition before reporting done.
+5. Use the model for judgment, not deterministic work: routing, retries, status checks, transforms, and mechanical validation belong in tools or code where possible.
+6. Respect budget and context limits: if a task is growing past the available context, summarize current state and surface the need for a fresh pass.
+7. Surface conflicts, do not average them: when repo files, memory, Slack, Notion, Linear, or prior artifacts disagree, name the conflict and follow the source-of-truth rules.
+8. Read before writing: inspect the relevant file, neighboring files, templates, and existing patterns before adding or changing content.
+9. Tests and checks must verify intent: passing commands are not enough if they do not prove the behavior or artifact quality the task requires.
+10. Checkpoint significant steps: for multi-step work, keep the user oriented on what changed, what is verified, and what remains.
+11. Convention beats novelty: match this repo's current structure, language, templates, naming, and conservative proof posture unless asked to change them.
+12. Fail visibly: never report success if files, records, tests, sources, checks, sends, commits, pushes, or approvals were skipped, partial, blocked, or unverified.
 
 ## Source-of-Truth Rules
 
