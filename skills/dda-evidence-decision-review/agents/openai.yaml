@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDA Evidence Decision Review"
+  short_description: "Review DDA evidence into decisions."
+  default_prompt: "Use the DDA evidence decision review workflow to compare meeting notes, transcripts, Notion or Slack context, Linear status, and repo artifacts, then create a review-only decision packet with proven claims, unsupported claims, feedback, hard stops, and next eval criteria."
