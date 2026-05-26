@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDA Codex Intent Router"
+  short_description: "Route DDA intent into safe packets."
+  default_prompt: "Use the DDA Codex intent router workflow to stabilize messy DDA or Systems Shaper intent, choose the correct mode, route to the smallest safe surface, produce the required packet, and keep memory, automation, canon, runtime, and external-write actions gated unless explicitly approved."
